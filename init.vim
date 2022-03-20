@@ -26,8 +26,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'release' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 "Plug 'junegunn/fzf'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
