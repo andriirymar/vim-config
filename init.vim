@@ -14,6 +14,8 @@ set textwidth=100
 set noswapfile
 set scrolloff=7
 set encoding=UTF-8
+set langmenu=en_US
+set encoding=UTF-8
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
@@ -26,15 +28,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'release' }
-Plug 'airblade/vim-rooter'
-Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
-"Plug 'junegunn/fzf'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-"Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'hashivim/vim-terraform'
+Plug 'junegunn/fzf.vim'
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 " ************* Color scheme *************
@@ -42,23 +38,30 @@ colorscheme gruvbox
 
 " ************* Keyboard binds **************
 inoremap jk <ESC>
-map <C-a> <ESC>^
-imap <C-a> <ESC>I
-map <C-e> <ESC>$
-imap <C-e> <ESC>A
 
 " You can split the window in Vim by typing :split/:vsplit and navigate by CTRL+j/CTRL+k/CTRL+h/CTRL+l.
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
+nnoremap<c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 " ************* NERDTree config ***************
-nmap <C-j> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+
+" ************* FloatTeerm config ***************
+nmap <C-n> :NERDTreeToggle<CR>
+let g:floaterm_keymap_new    = '<F7>'
+let g:floaterm_keymap_prev   = '<F8>'
+let g:floaterm_keymap_next   = '<F9>'
+let g:floaterm_keymap_toggle = '<C-b>'
+let g:floaterm_height = 0.4
+
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Open the existing NERDTree on each new tab.
 autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
 
 " ************* NERDCommenter config ***************
 vmap ++ <plug>NERDCommenterToggle
@@ -73,3 +76,4 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-json',
   \ ]
+
