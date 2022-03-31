@@ -31,10 +31,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 " ************* Color scheme *************
-colorscheme gruvbox
+colorscheme solarized8
 
 " ************* Keyboard binds **************
 inoremap jk <ESC>
@@ -67,6 +68,10 @@ autocmd VimEnter * NERDTree | wincmd p
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 vmap ++ <plug>NERDCommenterToggle
+
+" ************* Arrow move binds ***************
+noremap <M-Down> :m+<CR>
+noremap <M-Up> :m . -2<CR>
 
 " ************* COC config ***************
 let g:coc_global_extensions = [
