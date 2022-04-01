@@ -16,6 +16,7 @@ set scrolloff=7
 set encoding=UTF-8
 set langmenu=en_US
 set encoding=UTF-8
+set clipboard=unnamedplus
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
