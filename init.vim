@@ -73,6 +73,12 @@ vmap ++ <plug>NERDCommenterToggle
 noremap <M-Down> :m+<CR>
 noremap <M-Up> :m . -2<CR>
 
+
+" ************* FZF binds ***************
+nnoremap <c-p> :Files<CR>
+nnoremap <c-f> :Rg<CR>
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
 " ************* COC config ***************
 let g:coc_global_extensions = [
   \ 'coc-snippets',
