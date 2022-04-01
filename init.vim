@@ -45,6 +45,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap<c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+tnoremap <Esc> <c-\><c-n>
 
 " ************* NERDTree config ***************
 nmap <C-n> :NERDTreeToggle<CR>
@@ -55,6 +56,8 @@ let g:floaterm_keymap_prev   = '<F8>'
 let g:floaterm_keymap_next   = '<F9>'
 let g:floaterm_keymap_toggle = '<C-b>'
 let g:floaterm_height = 0.4
+let g:floaterm_wintype = 'split'
+let g:floaterm_position = 'bottom'
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
