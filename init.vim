@@ -38,7 +38,7 @@ call plug#end()
 colorscheme solarized8
 
 " ************* Keyboard binds **************
-inoremap jk <ESC>
+"inoremap jk <ESC>
 
 " You can split the window in Vim by typing :split/:vsplit and navigate by CTRL+j/CTRL+k/CTRL+h/CTRL+l.
 nnoremap <c-j> <c-w>j
@@ -50,7 +50,6 @@ nnoremap <c-l> <c-w>l
 nmap <C-n> :NERDTreeToggle<CR>
 
 " ************* FloatTeerm config ***************
-nmap <C-n> :NERDTreeToggle<CR>
 let g:floaterm_keymap_new    = '<F7>'
 let g:floaterm_keymap_prev   = '<F8>'
 let g:floaterm_keymap_next   = '<F9>'
@@ -69,9 +68,10 @@ vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 vmap ++ <plug>NERDCommenterToggle
 
-" ************* Arrow move binds ***************
-noremap <M-Down> :m+<CR>
-noremap <M-Up> :m . -2<CR>
+" ************* General bindings ***************
+noremap <m-Down> :m+<CR>
+noremap <m-Up> :m . -2<CR>
+nmap <c-s> :w<CR>
 
 
 " ************* FZF binds ***************

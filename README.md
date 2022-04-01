@@ -1,6 +1,7 @@
 # vim-config
 Vim/Nvim Config
 
-## Pre-requirements
-Install iTerm2
-Intall ripgrep
+## Dependencies
+- [iTerm2](https://iterm2.com/)
+- [RipGrep](https://github.com/BurntSushi/ripgrep)
+- [bat](https://github.com/sharkdp/bat)
