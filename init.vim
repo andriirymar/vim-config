@@ -38,6 +38,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'psliwka/vim-smoothie'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tomarrell/vim-npr'
 call plug#end()
 
 " ************* Color scheme *************
@@ -64,6 +65,9 @@ let g:floaterm_keymap_toggle = '<C-b>'
 let g:floaterm_height = 0.4
 let g:floaterm_wintype = 'split'
 let g:floaterm_position = 'bottom'
+
+" ************* Go File config ***************
+let g:vim_npr_file_names = ["", ".js", "/index.js"]
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
