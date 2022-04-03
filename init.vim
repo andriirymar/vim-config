@@ -99,5 +99,10 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-json',
+  \ 'coc-yaml',
+  \ 'coc-html',
+  \ 'coc-sql',
+  \ 'coc-tabnine',
+  \ 'coc-docker'
   \ ]
 
