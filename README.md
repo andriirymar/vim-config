@@ -3,6 +3,7 @@ Vim/Nvim Config
 
 ## Dependencies
 - Node.JS =>12
+- Debugger (e.g vscode-node-debug2)
 - [iTerm2](https://iterm2.com/)
 - [RipGrep](https://github.com/BurntSushi/ripgrep)
 - [bat](https://github.com/sharkdp/bat)

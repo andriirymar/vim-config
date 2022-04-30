@@ -46,6 +46,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tomarrell/vim-npr'
 Plug 'pacha/vem-tabline'
+Plug 'puremourning/vimspector'
+
 call plug#end()
 
 " ************* Color scheme *************
