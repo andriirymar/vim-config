@@ -22,6 +22,7 @@ set nobackup
 set nowritebackup
 set cmdheight=2
 set shortmess+=c
+set conceallevel=0
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
