@@ -8,3 +8,6 @@ Vim/Nvim Config
 - [RipGrep](https://github.com/BurntSushi/ripgrep)
 - [bat](https://github.com/sharkdp/bat)
 - [Nerd Font](https://github.com/ryanoasis/nerd-fonts#font-installation)
+
+
+FOR BETTER EXPERIENCE REFER TO: https://github.com/NvChad/NvChad
